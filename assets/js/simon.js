@@ -1,4 +1,7 @@
-var colorArr=["green","red","yellow","blue"];
+
+
+$(document).ready(function(){
+  var colorArr=["green","red","yellow","blue"];
 var hisArr=[];
 var myArr=[];
 var j=0;var k=0;
@@ -95,8 +98,6 @@ function longLoop(){
   console.log('longLoop','time'+time,hisArr.slice(0,j))
   $(".count-text").text(j);//n
 }
-
-$(document).ready(function(){
   reset();
   $(".off-on").click(function(){
     if($(".off-on-inner").css('left')==='2px'){
